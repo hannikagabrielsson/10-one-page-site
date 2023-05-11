@@ -1,0 +1,263 @@
+
+/* Mobile first */
+html {
+    font-size: 62,5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+header { 
+    position: sticky;
+    top: 0;
+}  
+
+body {
+  background-color: #454A4A;
+  margin: 1rem;
+} 
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.mainNav {
+  background-color: black;
+  color: white;
+  margin: -1rem -1rem 0 -1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainNav >* {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+#anchor1, #anchor2, #anchor3, #anchor4, #anchor5 {
+  /* scroll-margin-top: 9rem; */
+  position: relative;           /* kaksi eri vaihtoehtoa toteuttaa */
+  top: -9rem;
+}
+
+.portfolioBackgroundImage {
+  background-image: url(https://source.unsplash.com/1600x900/?city,skyline);
+  padding: 1.5rem;
+}
+
+.portfolioBackgroundBox {
+  background-color:rgba(0, 0, 0, 0.442);
+  padding: 1rem;
+  color: #655548;
+}
+
+.portfolioBackgroundBox h1, .portfolioBackgroundBox h2 {
+  padding-block-end: 0.5rem;
+} 
+
+h1, h2 {
+  color: chocolate;
+  font-size: 1.4rem;
+}
+
+.esimerkki li {
+  font-style: italic;
+
+}
+.esimerkki span {
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+.menneisyys {
+  background-color: #F5F3F6;
+  padding: 0.5rem;
+}
+
+.menneisyys h1, .menneisyys h2 {
+  color: black;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards article {
+  margin: 0.5rem;
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  border: solid 1px;
+  border-color: black;
+  border-radius: 0.5rem;
+}
+.cards figure img {
+  max-width: 100%;
+}
+
+.cards h2 {
+  font-weight: 700;
+}
+
+.cards article >* {
+  padding-block-end: 1rem;
+}
+
+.cards a {
+  color: chocolate;
+  font-style: italic;
+}
+
+.parallax {
+  background-image: url(https://source.unsplash.com/1600x900/?urban,fireworks);
+  min-height: 40rem;
+  background-attachment: fixed;
+  /* background-position: center; */
+  /* background-size: cover; */
+}
+
+.nykyisyys {
+  margin: 1rem 0 0 0;
+}
+
+.nykyisyys figure img {
+  max-width: 100%;
+  margin: 1rem 1rem 0 0;
+}
+
+.tulevaisuus figure img {
+  max-width: 100%;
+  padding: 0 1rem 0.5rem 0;
+  margin: 1rem 0 0 0;
+}
+.nykyisyys, .tulevaisuus, .contact{
+  border-top: 1px solid lightblue;
+  padding: 1rem 0 0;
+  color: white;
+}
+
+.contact {
+  /* padding-right: 10rem; */
+}
+
+.nykyisyys >*, .tulevaisuus >*, .contact >* {
+padding-block-end: 1rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  align-content: space-between;
+
+}
+
+  .formField {
+  display:flex;
+  flex-direction: row;
+  margin-block-end: 10px;
+  justify-content: flex-end;
+}
+
+.formField label {
+  flex-basis: 10%;
+}
+
+.formField input {
+  flex-basis: 75%;
+}
+
+
+#button {
+  flex-basis: 10%;
+  background-color: chocolate;
+  color: white;
+  border-radius: 0.3rem;
+
+}
+
+/* form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 8rem;
+  align-content: space-between;
+  
+}
+
+form label {
+  flex-basis: 30%;
+}
+form input {
+  flex-basis: 65%;
+}
+#button {
+  flex-basis: 10%;
+  background-color: chocolate;
+  color: white;
+  border-radius: 0.3rem; 
+} */
+
+footer {
+  color: white;
+  border-top: 1.5px solid white;
+  padding-block-start: 0.5rem;
+}
+    
+/* tablet-näkymä */
+
+@media only screen and (min-width: 426px) {
+  
+
+    .mainNav { 
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+
+    }
+    .menuPortfolio {
+    flex-grow: 2;
+    }
+
+    .cards {
+      flex-direction: row;
+    }
+
+    .nykyisyys figure img {
+      max-width: 30%;
+    }
+    .tulevaisuus figure img {
+      max-width: 30%;
+    }
+
+    .nykyisyys figure img {
+      float: right;
+      padding: 0 0 0.5rem 0.5rem;
+    }
+    
+    .tulevaisuus figure img {
+      float: left;
+    }
+    .nykyisyys, .tulevaisuus, .contact{
+      clear: both;
+    }
+    #anchor1, #anchor2, #anchor3, #anchor4, #anchor5 {
+      /* scroll-margin-top: 6rem; */
+      position: relative;           /* kaksi eri vaihtoehtoa toteuttaa */
+      top: -6rem;
+    }
+    }
+    
+  
+
+  /* desktop-näkymä */
+
+  @media only screen and (min-width: 769px) {
+    body {
+ 
+    }
+  }
